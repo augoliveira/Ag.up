@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": { "first": "Construímos ", "second": "resultados." },
+    "content": {
+      "first": "Criamos e otmizamos marcas para seu negócio digital",
+      "second": "Ajudamos as empresas a crescer, lançar produtos e obter uma vantagem competitiva no mundo digital de hoje."
+    },
+    "image": "/img/slid/x1.jpg"
+  },
+  {
+    "id": 2,
+    "title": { "first": "Soluções únicas", "second": "para o seu negócio" },
+    "content": {
+      "first": "O design certo e as ideias certas importam muito no design de Seu projeto",
+      "second": "O negócio. o estilo que faz a diferença."
+    },
+    "image": "/img/slid/n/3.jpg"
+  },
+  {
+    "id": 3,
+    "title": { "first": "UX/UI", "second": "Criamos experiências" },
+    "content": {
+      "first": "que encantam o cliente e agregam valor. ",
+      "second": "Projete e crie protótipos de produtos de software inovadores de forma colaborativa para criar novas oportunidades de negócios - garantindo sua vantagem competitiva agora e no futuro."
+    },
+    "image": "/img/slid/n/slide1.jpg"
+  },
+  {
+    "id": 4,
+    "title": {
+      "first": "SEO ",
+      "second": "E otimização de Sites"
+    },
+    "content": {
+      "first": "atraia clientes qualificados e gaste menos com anúncios",
+      "second": "Tá na hora de economizar nisso otimizando seu site com a UP.EXPERT!"
+    },
+    "image": "/img/slid/n/04.jpg"
+  }
+]

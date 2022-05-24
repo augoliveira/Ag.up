@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "smallTitle": "Sobre nos",
+  "title": "Agência de Marketing Digital Full Service",
+  "content": "Geramos ideias e estratégias impulsionadas pela percepção do consumidor e ampliadas por um domínio sem precedentes da tecnologia. É isso que gostamos de fazer, todos os dias, com as marcas de nossos clientes.",
+  "image": "/img/feat.png",
+  "stauts": [
+    { "id": 1, "number": "3", "letter": "K", "stautsName": "Hobbe de cliente" },
+    { "id": 2, "number": "14", "letter": "K", "stautsName": "Projetos de sucesso" }
+  ]
+}

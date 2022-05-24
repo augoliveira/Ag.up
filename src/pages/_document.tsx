@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
           <Fragment key="1">
             {initialProps.styles}
             {sheet.getStyleElement()}
-            </Fragment>
+          </Fragment>
         ]
       }
     } finally {
