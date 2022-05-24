@@ -9,10 +9,13 @@ const LoadingScreen = () => {
     if (appData.showLoading) {
       loadingPace();
 
+      // @ts-ignore
       if (bodyEl.classList.contains("hideX")) {
+        // @ts-ignore
         bodyEl.classList.remove("hideX");
       }
     } else {
+      // @ts-ignore
       bodyEl.classList.add("hideX");
     }
   });
