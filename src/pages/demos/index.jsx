@@ -1,40 +1,40 @@
-
-import React from "react";
-import Link from "next/link";
-import Split from "../../components/Split";
-import DarkTheme from "../../layouts/Dark";
-import addParlx from "../../common/addParlx";
+// @ts-nocheck
+import React from 'react'
+import Link from 'next/link'
+import Split from '../../components/Split'
+import DarkTheme from '../../layouts/Dark'
+import addParlx from '../../common/addParlx'
 import Services03 from '../../components/Services03/services3'
 import ShowcasesOneCenter from '../../components/Showcases-one-center/index'
-import initIsotope from "../../common/initIsotope";
-import bg from "../../../public/img/demos/bg-slide.jpg";
-import Typewriter from "typewriter-effect";
+import initIsotope from '../../common/initIsotope'
+import bg from '../../../public/img/demos/bg-slide.jpg'
+import Typewriter from 'typewriter-effect'
 
 const Demos = () => {
-  const fixedHeader = React.useRef(null);
-  const MainContent = React.useRef(null);
+  const fixedHeader = React.useRef(null)
+  const MainContent = React.useRef(null)
 
   React.useEffect(() => {
     setInterval(() => {
       if (fixedHeader.current) {
-        var slidHeight = fixedHeader.current.offsetHeight;
+        var slidHeight = fixedHeader.current.offsetHeight
       }
       if (MainContent.current) {
-        MainContent.current.style.marginTop = slidHeight + "px";
+        MainContent.current.style.marginTop = slidHeight + 'px'
       }
-    }, 1000);
-  }, [fixedHeader, MainContent]);
-  const [pageLoaded, setPageLoaded] = React.useState(false);
+    }, 1000)
+  }, [fixedHeader, MainContent])
+  const [pageLoaded, setPageLoaded] = React.useState(false)
   React.useEffect(() => {
-    setPageLoaded(true);
+    setPageLoaded(true)
     if (pageLoaded) {
       setTimeout(() => {
-        initIsotope();
-      }, 1000);
-      addParlx();
-      document.querySelector("body").style.backgroundColor = "#181b21";
+        initIsotope()
+      }, 1000)
+      addParlx()
+      document.querySelector('body').style.backgroundColor = '#181b21'
     }
-  }, [pageLoaded]);
+  }, [pageLoaded])
   return (
     <DarkTheme>
       <style jsx>
@@ -54,7 +54,7 @@ const Demos = () => {
             margin-top: 25px;
             font-size: 17px;
             font-weight: 400;
-            font-family: "Barlow Condensed", sans-serif;
+            font-family: 'Barlow Condensed', sans-serif;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -111,28 +111,30 @@ const Demos = () => {
       <header
         ref={fixedHeader}
         className="works-header fixed-slider hfixd valign bg-img"
-        style={{backgroundImage: `url(${bg.src}) `,
-        width: '100%',
-        height: '100%', }}
-        data-overlay-dark="4" 
+        style={{
+          backgroundImage: `url(${bg.src}) `,
+          width: '100%',
+          height: '100%'
+        }}
+        data-overlay-dark="4"
       >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9 col-md-11 static">
               <div className="capt mt-50">
                 <div className="parlx">
-                <h2
+                  <h2
                     className="cta-5-title"
-                    style={{ fontFamily: `Montserrat, sans-serif;` }}
+                    style={{ fontFamily: 'Montserrat, sans-serif;' }}
                   >
                     <font
                       className="klickart-font"
-                      style={{ color: `#8257e5; };` }}
+                      style={{ color: '#8257e5; };' }}
                     >
                       <b className="medium-b">O que a </b>
                       <font
                         className="klickart-font"
-                        style={{ color: `rgb(255, 255, 255);` }}
+                        style={{ color: 'rgb(255, 255, 255);' }}
                       >
                         <b className="medium-b">UP</b>
                       </font>
@@ -140,34 +142,34 @@ const Demos = () => {
                     </font>
                   </h2>
                   <p>
-                  Nós cuidamos do seu futuro, para caminharmos juntos sempre.
+                    Nós cuidamos do seu futuro, para caminharmos juntos sempre.
                   </p>
-                
-                <Typewriter
+
+                  <Typewriter
                     options={{
-                      wrapperClassName: "color-font fw-600",
+                      wrapperClassName: 'color-font fw-600',
                       strings: [
-                        "Marca",
-                        "Campanha",
-                        "Impressos",
-                        "Sites e aplicativos",
+                        'Marca',
+                        'Campanha',
+                        'Impressos',
+                        'Sites e aplicativos'
                       ],
                       autoStart: true,
-                      loop: true,
+                      loop: true
                     }}
                     loop={true}
-                    onInit={(typewriter) => {
-                      typewriter;
+                    onInit={typewriter => {
+                      typewriter
                     }}
                   />
                   <Link href="/home/home2-dark">
-                            <a className="btn-curve btn-bord btn-lit mt-30">
-                              <span>Agência de conteúdo</span>
-                            </a>
-                          </Link>
-                  </div>
+                    <a className="btn-curve btn-bord btn-lit mt-30">
+                      <span>Agência de conteúdo</span>
+                    </a>
+                  </Link>
+                </div>
                 <div className="bactxt custom-font valign">
-                  <span className="full-width" style={{ color: "transparent" }}>
+                  <span className="full-width" style={{ color: 'transparent' }}>
                     dev
                   </span>
                 </div>
@@ -188,13 +190,12 @@ const Demos = () => {
               <span className="tbg">O que fazemos?</span>
             </div>
             <Services03 />
-          
           </div>
         </section>
 
         <section
           className="masonery section-padding pb-70"
-          style={{ background: "#181b21" }}
+          style={{ background: '#181b21' }}
         >
           <div className="container-fluid">
             <div className="sec-head custom-font text-center">
@@ -206,23 +207,23 @@ const Demos = () => {
               <span className="tbg">Case website</span>
             </div>
             <section>
-            <ShowcasesOneCenter />
+              <ShowcasesOneCenter />
             </section>
           </div>
         </section>
         <section className="services bords lficon section-padding position-re">
           <div className="container">
             <div className="row justify-content-center">
-            <div className="container-fluid">
-            <div className="sec-head custom-font text-center">
-              <Split>
-                <h3 className="wow words chars splitting" data-splitting>
-                  Agência criativa
-                </h3>
-              </Split>
-              <span className="tbg">Soluções?</span>
-            </div>
-          </div>
+              <div className="container-fluid">
+                <div className="sec-head custom-font text-center">
+                  <Split>
+                    <h3 className="wow words chars splitting" data-splitting>
+                      Agência criativa
+                    </h3>
+                  </Split>
+                  <span className="tbg">Soluções?</span>
+                </div>
+              </div>
             </div>
             <div className="row">
               <div className="col-lg-6 wow fadeInLeft" data-wow-delay=".5s">
@@ -299,7 +300,7 @@ const Demos = () => {
         <footer className="footer-half sub-bg">
           <div className="container">
             <div className="copyrights text-center mt-0">
-            <p>
+              <p>
                 COPYRIGHT © 2022 UP EXPERT | DESENVOLVIDO POR |{' '}
                 <a href="https://upexpert.com.br/">
                   {' '}
@@ -312,7 +313,7 @@ const Demos = () => {
         </footer>
       </div>
     </DarkTheme>
-  );
-};
+  )
+}
 
-export default Demos;
+export default Demos
