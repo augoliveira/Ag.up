@@ -1,8 +1,12 @@
 const initIsotope = () => {
   var grid = document.querySelectorAll(".gallery");
+  /**
+   * @type {{ arrange: (arg0: { filter: any; }) => void; }}
+   */
   var iso;
   if (grid.length >= 1) {
     grid.forEach((item) => {
+      // @ts-ignore
       iso = new Isotope(item, {
         itemSelector: ".items",
       });
@@ -12,9 +16,11 @@ const initIsotope = () => {
   var filtersElem = document.querySelector(".filtering");
   if (filtersElem) {
     filtersElem.addEventListener("click", function (event) {
+      // @ts-ignore
       if (!matchesSelector(event.target, "span")) {
         return;
       }
+      // @ts-ignore
       var filterValue = event.target.getAttribute("data-filter");
       filterValue = filterValue;
       iso.arrange({ filter: filterValue });
@@ -24,8 +30,11 @@ const initIsotope = () => {
       var buttonGroup = buttonGroups[i];
       radioButtonGroup(buttonGroup);
     }
+    // @ts-ignore
     function radioButtonGroup(buttonGroup) {
+      // @ts-ignore
       buttonGroup.addEventListener("click", function (event) {
+        // @ts-ignore
         if (!matchesSelector(event.target, "span")) {
           return;
         }

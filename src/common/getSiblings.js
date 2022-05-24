@@ -1,4 +1,7 @@
-const getSiblings = (e) => {
+const getSiblings = (/** @type {Element} */ e) => {
+  /**
+   * @type {any[]}
+   */
   const siblings = [];
   if (!e.parentNode) {
     return siblings;
