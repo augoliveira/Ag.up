@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image'
 import PageHeader from "../../components/Page-header";
 import Orcamento from "../../components/Orcamento";
 import DarkTheme from "../../layouts/Dark";
@@ -7,9 +6,9 @@ import DarkTheme from "../../layouts/Dark";
 
 
 const Contact = () => {
-   React.useEffect(() => {
-     document.querySelector("body").classList.add("index3");
-   }, []);
+  React.useEffect(() => {
+    document.querySelector("body").classList.add("index3");
+  }, []);
   return (
     <DarkTheme>
       <PageHeader
@@ -20,7 +19,7 @@ const Contact = () => {
         ]}
         Image="/assets/img/bg-004-free-img.png"
       />
-      
+
       <section className="contact">
         < Orcamento />
       </section>
