@@ -2,9 +2,9 @@ import React from 'react'
 import appData from '../../data/app.json'
 import Image from 'next/image'
 import Link from 'next/link'
-import User from '../../components/icons/user.js'
-import Empresa from '../../components/icons/empresa.js'
-import Seta from '../../components/icons/seta.js'
+import User from '../icons/user.js'
+import Empresa from '../icons/empresa.js'
+import Seta from '../icons/seta.js'
 
 const orcamento = () => {
   return (
