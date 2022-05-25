@@ -2,7 +2,8 @@
 import React from "react";
 import Head from "next/head";
 
-const DarkTheme = ({ children }) => {
+// @ts-ignore
+function DarkTheme({ children }) {
   return (
     <>
       <Head>
@@ -15,13 +16,13 @@ const DarkTheme = ({ children }) => {
         <link rel="stylesheet" href="/assets/orçamento/css/mqueries.css" />
         <link rel="stylesheet" href="/assets/orçamento/css/normalize.css" />
         <link rel="stylesheet" href="/assets/orçamento/css/animate.css" />
-	      <link rel="stylesheet" href="/lib/selectFx/cs-select.css"/>
-	      <link rel="stylesheet" href="/lib/selectFx/cs-skin-border.css"/>
-        <link rel="stylesheet" href="/lib/selectFx/cs-skin-border.css"/>
+        <link rel="stylesheet" href="/lib/selectFx/cs-select.css" />
+        <link rel="stylesheet" href="/lib/selectFx/cs-skin-border.css" />
+        <link rel="stylesheet" href="/lib/selectFx/cs-skin-border.css" />
       </Head>
       {children}
     </>
   );
-};
+}
 
 export default DarkTheme;
