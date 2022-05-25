@@ -1,6 +1,4 @@
 import React from 'react'
-import appData from '../../data/app.json'
-import Image from 'next/image'
 import Link from 'next/link'
 import User from '../icons/user.js'
 import Empresa from '../icons/empresa.js'
