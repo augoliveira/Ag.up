@@ -1,6 +1,5 @@
 import React from "react";
 import PageHeader from "../../components/Page-header";
-import Orcamento from "../../components/Orcamento";
 import DarkTheme from "../../layouts/Dark";
 
 
@@ -21,7 +20,7 @@ const Contact = () => {
       />
 
       <section className="contact">
-        < Orcamento />
+
       </section>
       </DarkTheme>
   );
