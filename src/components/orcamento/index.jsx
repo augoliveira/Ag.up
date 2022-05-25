@@ -105,7 +105,7 @@ const orcamento = () => {
 										<Seta />
                     </a>
                   </Link>
-                 <input type="radio" name="perfil" value="1" />
+                  <input type="radio" name="perfil" value="1" />
                 </div>
                 <div className="perfil soft-hover" id="business">
                 <Link href="/formulario">
