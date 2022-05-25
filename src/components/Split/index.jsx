@@ -18,3 +18,10 @@ class Split extends React.Component {
 }
 
 export default Split;
+/**
+ * @param {{ target: any; }} _arg0
+ */
+function Splitting(_arg0) {
+  throw new Error("Function not implemented.");
+}
+
