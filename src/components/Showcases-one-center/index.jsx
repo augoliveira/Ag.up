@@ -56,19 +56,24 @@ const ShowcasesOneCenter = () => {
               },
             }}
             onBeforeInit={(swiper) => {
+              // @ts-ignore
               swiper.params.navigation.prevEl = navigationPrevRef.current;
+              // @ts-ignore
               swiper.params.navigation.nextEl = navigationNextRef.current;
             }}
             onSwiper={(swiper) => {
               setTimeout(() => {
                 for (var i = 0; i < swiper.slides.length; i++) {
+                  // @ts-ignore
                   swiper.slides[i].childNodes[0].setAttribute(
                     "data-swiper-parallax",
                     0.75 * swiper.width
                   );
                 }
 
+                // @ts-ignore
                 swiper.params.navigation.prevEl = navigationPrevRef.current;
+                // @ts-ignore
                 swiper.params.navigation.nextEl = navigationNextRef.current;
 
                 swiper.navigation.destroy();
